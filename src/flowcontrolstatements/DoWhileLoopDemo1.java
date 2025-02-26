@@ -30,7 +30,7 @@ public class DoWhileLoopDemo1 {
 		}
 	}
 	while(true);
-		
+	input.close();	
 	}
 	
 
