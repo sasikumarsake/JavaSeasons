@@ -1,24 +1,26 @@
 package arrays;
 
 public class ArraysDemo2 {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		int[] a = new int[5];
+        String [] s = new String[5]; // Array of size 5
 
-		for (int i = 0; i < a.length; i++) {
+        // Printing initial values (should print null for all elements)
+        for(int i = 0; i < s.length; i++) {
+            System.out.println(s[i]);  // Prints null since String default is null
+        }
 
-			System.out.println(a[i]);
-		}
+        // Assigning values to the array
+        s[0] = "SASI";
+        s[1] = "KUMAR1";
+        s[2] = "KUMAR2";
+        s[3] = "KUMAR3";
+        s[4] = "KUMAR4";
+        // s[5] = "KUMAR5"; // ERROR: Index 5 does not exist
 
-		a[0] = 100;
-		a[1] = 200;
-
-		a[4] = 500;
-
-		for (int i = 0; i < a.length; i++) {
-
-			System.out.println(a[i]);
-		}
-	}
-
+        // Corrected loop condition
+        for(int i = 0; i < s.length; i++) {  // Changed `<=` to `<`
+            System.out.println(s[i]);
+        }
+    }
 }
